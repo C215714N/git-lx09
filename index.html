@@ -36,5 +36,32 @@
             </p>
         </article>
     </section>
+    <section>
+        <h2>Apuntadores GIT</h2>
+        <article>
+            <h3>HEAD</h3>
+            <p>
+                Apuntador movil que indica donde nos encontramos en el historial de cambios y ademas permite desplazarnos entre los diferentes commits. Tambien funciona como referente a la hora de realizar comparaciones, como por ejemplo <em>HEAD^^</em> y <em>HEAD~2</em> indican que hacemos referencia a 2 commits anteriores o ancestros.
+            </p>
+        </article>
+        <article>
+            <h3>BRANCH</h3>
+            <p>
+                Son apuntadores dinamicos que se ubican en el ultimo commit del historial de cambios, podemos crear todas las que necesitemos segun las variantes que tenga nuestro proyecto. Sirven como referentes ya que los nodos de git desconocen cuales son los commits posteriores. Se utilizan principalmente para probar caracteristicas nuevas, realizar propuestas o cambios que no sabemos si funcionaran en el proyecto final.
+            </p>
+        </article>
+        <article>
+            <h3>TAG</h3>
+            <p>
+                Son apuntadores estaticos que se utilizan principalmente para el versionado del proyecto, ya que hacen referencia al commit donde se generaron. Facilita la navegacion dentro del historial ya que funcionan como puntos de control nombrados, Generalmente se identifican de la siguiente manera <em>v0.0.0</em> donde el primer numero indica la version principal, el segundo la compilacion o caracteristica agregada y el ultimo alguna correccion o revision del codigo.
+            </p>
+        </article>
+        <article>
+            <h3>STASH</h3>
+            <p>
+                Apuntador de la zona temporal de cambios, se utiliza principalmente cuando tenemos cambios pendientes que no ameritan la realizacion de un commit y necesitamos cambiar de rama. Genera una referencia al commit actual y el INDEX del mismo; de esta manera cuando se reaplican los cambios almacenados, se realiza una operacion <strong>merge a la inversa.</strong> En caso de trabajar con archivos que a los que no estemos haciendole seguimiento es necesario realizar el <em>git add</em>.
+            </p>
+        </article>
+    </section>
 </body>
 </html>
