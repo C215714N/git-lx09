@@ -72,10 +72,20 @@
 /* Tablas */
     .colabs{
         margin: 1rem auto;
+        border-collapse: collapse;
     }
     .colabs caption,
     .colabs td{
         padding: .25rem .5rem;
+    }
+    .colabs,
+    .colabs caption,
+    .colabs th,
+    .colabs td{
+        border: .1rem solid #c36
+    }
+    .colabs caption{
+        border-bottom: none;
     }
 /* Redes sociales */
 
