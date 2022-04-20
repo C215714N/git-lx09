@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" 
-        content="
+    <meta name="viewport" content="
             width=device-width, 
             initial-scale=1,
             maximum-scale=3">
@@ -12,6 +12,7 @@
     <!-- Styles CSS -->
     <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav>
@@ -35,19 +36,24 @@
         <article>
             <h3>Working Directory</h3>
             <p>
-                El directorio de trabajo hace referencia a la carpeta donde creamos el proyecto, muy rara vez utilizaremos la linea de comandos y trabajaremos principalmente con nuestro editor predilecto.
+                El directorio de trabajo hace referencia a la carpeta donde creamos el proyecto, muy rara vez
+                utilizaremos la linea de comandos y trabajaremos principalmente con nuestro editor predilecto.
             </p>
         </article>
         <article>
             <h3>Staging Area (INDEX)</h3>
             <p>
-                El area de control de cambios corresponde a un Archivo de la carpeta .git que identifica cuales son aquellos elementos del proyecto a los que estamos haciendole seguimiento. Es el area donde se realiza la captura del codigo (SNAPSHOT) para ser confirmada mas adelante.
+                El area de control de cambios corresponde a un Archivo de la carpeta .git que identifica cuales son
+                aquellos elementos del proyecto a los que estamos haciendole seguimiento. Es el area donde se realiza la
+                captura del codigo (SNAPSHOT) para ser confirmada mas adelante.
             </p>
         </article>
         <article>
             <h3>Repository (LOCAL/REMOTE)</h3>
             <p>
-                Es el area donde se almacenan los cambios confirmados mediante commits en formato BLOB (Binary Large Object). Basicamente es lo nos permite acceder a puntos anteriores dentro del proyecto, ya que podemos apuntar a los diferentes nodos dentro del historial de confirmaciones.
+                Es el area donde se almacenan los cambios confirmados mediante commits en formato BLOB (Binary Large
+                Object). Basicamente es lo nos permite acceder a puntos anteriores dentro del proyecto, ya que podemos
+                apuntar a los diferentes nodos dentro del historial de confirmaciones.
             </p>
         </article>
     </section>
@@ -56,19 +62,30 @@
         <article>
             <h3>HEAD</h3>
             <p>
-                Apuntador movil que indica donde nos encontramos en el historial de cambios y ademas permite desplazarnos entre los diferentes commits. Tambien funciona como referente a la hora de realizar comparaciones, como por ejemplo <em>HEAD^^</em> y <em>HEAD~2</em> indican que hacemos referencia a 2 commits anteriores o ancestros.
+                Apuntador movil que indica donde nos encontramos en el historial de cambios y ademas permite
+                desplazarnos entre los diferentes commits. Tambien funciona como referente a la hora de realizar
+                comparaciones, como por ejemplo <em>HEAD^^</em> y <em>HEAD~2</em> indican que hacemos referencia a 2
+                commits anteriores o ancestros.
             </p>
         </article>
         <article>
             <h3>BRANCH</h3>
             <p>
-                Son apuntadores dinamicos que se ubican en el ultimo commit del historial de cambios, podemos crear todas las que necesitemos segun las variantes que tenga nuestro proyecto. Sirven como referentes ya que los nodos de git desconocen cuales son los commits posteriores. Se utilizan principalmente para probar caracteristicas nuevas, realizar propuestas o cambios que no sabemos si funcionaran en el proyecto final.
+                Son apuntadores dinamicos que se ubican en el ultimo commit del historial de cambios, podemos crear
+                todas las que necesitemos segun las variantes que tenga nuestro proyecto. Sirven como referentes ya que
+                los nodos de git desconocen cuales son los commits posteriores. Se utilizan principalmente para probar
+                caracteristicas nuevas, realizar propuestas o cambios que no sabemos si funcionaran en el proyecto
+                final.
             </p>
         </article>
         <article>
             <h3>TAG</h3>
             <p>
-                Son apuntadores estaticos que se utilizan principalmente para el versionado del proyecto, ya que hacen referencia al commit donde se generaron. Facilita la navegacion dentro del historial ya que funcionan como puntos de control nombrados, Generalmente se identifican de la siguiente manera <em>v0.0.0</em> donde el primer numero indica la version principal, el segundo la compilacion o caracteristica agregada y el ultimo alguna correccion o revision del codigo.
+                Son apuntadores estaticos que se utilizan principalmente para el versionado del proyecto, ya que hacen
+                referencia al commit donde se generaron. Facilita la navegacion dentro del historial ya que funcionan
+                como puntos de control nombrados, Generalmente se identifican de la siguiente manera <em>v0.0.0</em>
+                donde el primer numero indica la version principal, el segundo la compilacion o caracteristica agregada
+                y el ultimo alguna correccion o revision del codigo.
             </p>
         </article>
     </section>
@@ -92,14 +109,14 @@
                     <td>Cristian Racedo</td>
                     <td>cristiandracedo@hotmail.com</td>
                 </tr>
-               
+
                 <!-- Ingrese su datos -->
                 <tr>
                     <td>toralesandres</td>
                     <td>torales Andres</td>
                     <td>andres.toraless@gmil.com</td>
                 </tr>
-                <tr>   
+                <tr>
                     <td>MS_Windows</td>
                     <td>Bill Gates</td>
                     <td>b.gates@microsoft</td>
@@ -114,6 +131,11 @@
                     <td>Mathias Benvenuto</td>
                     <td>benvenutomathias65@gmail.com</td>
                 </tr>
+                <tr>
+                    <td>francoguayuan</td>
+                    <td>Franco Guayuan</td>
+                    <td>franco.guayuan@gmail.com</td>
+                </tr>
 
             </tbody>
         </table>
@@ -125,4 +147,5 @@
     <!-- Scripts JS -->
     <script src="scripts/main.js"></script>
 </body>
+
 </html>
