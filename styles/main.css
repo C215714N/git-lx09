@@ -77,6 +77,14 @@
     .colabs td{
         padding: .25rem .5rem;
     }
+    .colabs,
+    .colabs caption,
+    .colabs tr,
+    .colabs td{
+        color: #eee;
+        text-shadow: -.1rem .1rem .1rem #333;
+        background-color: rgba(68,68,136,.5);
+    }
 /* Redes sociales */
 
 /* Formularios */
