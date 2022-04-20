@@ -76,6 +76,7 @@
         background: linear-gradient(#c36, #448);
         text-shadow: 0 0 .25rem #333;
         border-collapse: collapse;
+        box-shadow: -.5rem .5rem .5rem #3338;
     }
     .colabs caption,
     .colabs td{
