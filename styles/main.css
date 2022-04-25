@@ -99,6 +99,12 @@
     height: 100%;
     opacity: .7;
 }
+.mapaContacto.active,
+.mapButton.icon-min{
+    position: fixed;
+    z-index: 2;
+    opacity: .95;
+}
 .mapButton{
     min-height: 2rem;
     min-width: 2rem;
