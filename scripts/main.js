@@ -9,12 +9,12 @@
     menuBtn.onclick = () => menuLst.classList.toggle('active') ? menuBtn.innerHTML = "&times;" : menuBtn.innerHTML = "&equiv;"
 
 // Mapa de Contacto
-    mapBtn.addEventListener('click', () => toggleClass('active', 'icon-min', 'icon-max') )
+    mapBtn.addEventListener('click', () => toggleClass([mapBtn, mapFrm], ['active', 'icon-min', 'icon-max'] ) )
 
-    function toggleClass(className, a, b){
-        if(mapFrm.classList.toggle(className)){
-            mapBtn.classList.replace(b,a)
+    function toggleClass(el = [], cn = {a,b,c} ){
+        if(el[1].classList.toggle(cn[0])){
+            return el[0].classList.replace(cn[2], cn[1])
         } else {
-            mapBtn.classList.replace(a,b)
+            return el[0].classList.replace(cn[1], cn[2])
         }
     }
