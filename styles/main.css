@@ -113,3 +113,11 @@
         justify-content: space-around;
     }
 }
+/* Mapa de contacto */
+.mapaContacto{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 400px;
+    height: 350px;
+}
