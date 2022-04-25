@@ -86,50 +86,6 @@
         position: relative;
         padding: .5rem 0;
     }
-/* Tablas */
-    .colabs{
-        margin: 1rem auto;
-        color: #eee;
-        background: linear-gradient(#c36, #448);
-        text-shadow: 0 0 .25rem #333;
-        border-collapse: collapse;
-        box-shadow: -.5rem .5rem .5rem #3338;
-    }
-    .colabs caption,
-    .colabs td{
-        padding: .25rem .5rem;
-    }
-    .colabs caption{
-        border-radius: .25rem .25rem  0 0;
-        background-color: #c36;
-    }
-    .colabs tbody tr:nth-child(odd){
-        background-color: rgba(204,204,204, .2);
-    }
-    .colabs tbody tr:nth-child(even){
-        background-color: rgba(238,238,238,.2);
-    }
-/* Redes sociales */
-
-/* Formularios */
-
-/* Medium Devices - Tablets */
-@media screen and (min-width: 768px){
-    nav .btn{
-        display: none;
-    }
-    .menu{
-        display: flex;
-        width: auto;
-        max-height: 640px;
-    }
-}
-/* Large Devices - Desktop */
-@media screen and (min-width: 992px){
-    nav{
-        justify-content: space-around;
-    }
-}
 /* Mapa de contacto */
 .mapaContacto{
     position: absolute;
@@ -163,4 +119,68 @@
 }
 .icon-max::before{
     content: '+'
+}
+/* Tablas */
+    .colabs{
+        margin: 1rem auto;
+        color: #eee;
+        background: linear-gradient(#c36, #448);
+        text-shadow: 0 0 .25rem #333;
+        border-collapse: collapse;
+        box-shadow: -.5rem .5rem .5rem #3338;
+    }
+    .colabs caption,
+    .colabs td{
+        padding: .25rem .5rem;
+    }
+    .colabs caption{
+        border-radius: .25rem .25rem  0 0;
+        background-color: #c36;
+    }
+    .colabs tbody tr:nth-child(odd){
+        background-color: rgba(204,204,204, .2);
+    }
+    .colabs tbody tr:nth-child(even){
+        background-color: rgba(238,238,238,.2);
+    }
+/* Repositorios */
+    .repositories{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .repositories a{
+        position:relative;
+        margin: .25rem;
+        border-radius: .25rem;
+        padding: .5rem;
+        color:#eee;
+        background-color: #333;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+    .repositories a:hover{
+        bottom: .25rem;
+        text-shadow: 0 0 .5rem #eee;
+    }
+/* Redes sociales */
+
+/* Formularios */
+
+/* Medium Devices - Tablets */
+@media screen and (min-width: 768px){
+    nav .btn{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        width: auto;
+        max-height: 640px;
+    }
+}
+/* Large Devices - Desktop */
+@media screen and (min-width: 992px){
+    nav{
+        justify-content: space-around;
+    }
 }
