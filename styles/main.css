@@ -9,6 +9,7 @@
         h2,
         h3,
         h4,
+        header p,
         .menu{
             margin: 0;
         }
@@ -37,6 +38,9 @@
     }
 /* navegacion */
     nav{
+        position: sticky;
+        top: 0;
+        z-index: 2;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -63,7 +67,18 @@
         color: #eee;
         text-shadow: 0 0 .5rem #eee;
     }
-
+/* Cabecera */
+    #header{
+        display: grid;
+        align-content: center;
+        min-height: min(100vh, 480px);
+        padding: 1rem;
+        color:#eee;
+        background-image: radial-gradient(circle at center, #666,#333);
+        font-size: min(calc(2vw + .8rem), 3rem);
+        text-align: center;
+        text-shadow: 0 0 min(calc(1vw + .4rem), 1.5rem) #333;
+    }
 /* Medium Devices - Tablets */
 @media screen and (min-width: 768px){
     nav .btn{
