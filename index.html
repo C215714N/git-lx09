@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" 
-        content="
+    <meta name="viewport" content="
             width=device-width, 
             initial-scale=1,
             maximum-scale=3">
@@ -12,6 +12,7 @@
     <!-- Styles CSS -->
     <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav>
@@ -35,19 +36,24 @@
         <article>
             <h3>Working Directory</h3>
             <p>
-                El directorio de trabajo hace referencia a la carpeta donde creamos el proyecto, muy rara vez utilizaremos la linea de comandos y trabajaremos principalmente con nuestro editor predilecto.
+                El directorio de trabajo hace referencia a la carpeta donde creamos el proyecto, muy rara vez
+                utilizaremos la linea de comandos y trabajaremos principalmente con nuestro editor predilecto.
             </p>
         </article>
         <article>
             <h3>Staging Area (INDEX)</h3>
             <p>
-                El area de control de cambios corresponde a un Archivo de la carpeta .git que identifica cuales son aquellos elementos del proyecto a los que estamos haciendole seguimiento. Es el area donde se realiza la captura del codigo (SNAPSHOT) para ser confirmada mas adelante.
+                El area de control de cambios corresponde a un Archivo de la carpeta .git que identifica cuales son
+                aquellos elementos del proyecto a los que estamos haciendole seguimiento. Es el area donde se realiza la
+                captura del codigo (SNAPSHOT) para ser confirmada mas adelante.
             </p>
         </article>
         <article>
             <h3>Repository (LOCAL/REMOTE)</h3>
             <p>
-                Es el area donde se almacenan los cambios confirmados mediante commits en formato BLOB (Binary Large Object). Basicamente es lo nos permite acceder a puntos anteriores dentro del proyecto, ya que podemos apuntar a los diferentes nodos dentro del historial de confirmaciones.
+                Es el area donde se almacenan los cambios confirmados mediante commits en formato BLOB (Binary Large
+                Object). Basicamente es lo nos permite acceder a puntos anteriores dentro del proyecto, ya que podemos
+                apuntar a los diferentes nodos dentro del historial de confirmaciones.
             </p>
         </article>
     </section>
@@ -56,32 +62,49 @@
         <article>
             <h3>HEAD</h3>
             <p>
-                Apuntador movil que indica donde nos encontramos en el historial de cambios y ademas permite desplazarnos entre los diferentes commits. Tambien funciona como referente a la hora de realizar comparaciones, como por ejemplo <em>HEAD^^</em> y <em>HEAD~2</em> indican que hacemos referencia a 2 commits anteriores o ancestros.
+                Apuntador movil que indica donde nos encontramos en el historial de cambios y ademas permite
+                desplazarnos entre los diferentes commits. Tambien funciona como referente a la hora de realizar
+                comparaciones, como por ejemplo <em>HEAD^^</em> y <em>HEAD~2</em> indican que hacemos referencia a 2
+                commits anteriores o ancestros.
             </p>
         </article>
         <article>
             <h3>BRANCH</h3>
             <p>
-                Son apuntadores dinamicos que se ubican en el ultimo commit del historial de cambios, podemos crear todas las que necesitemos segun las variantes que tenga nuestro proyecto. Sirven como referentes ya que los nodos de git desconocen cuales son los commits posteriores. Se utilizan principalmente para probar caracteristicas nuevas, realizar propuestas o cambios que no sabemos si funcionaran en el proyecto final.
+                Son apuntadores dinamicos que se ubican en el ultimo commit del historial de cambios, podemos crear
+                todas las que necesitemos segun las variantes que tenga nuestro proyecto. Sirven como referentes ya que
+                los nodos de git desconocen cuales son los commits posteriores. Se utilizan principalmente para probar
+                caracteristicas nuevas, realizar propuestas o cambios que no sabemos si funcionaran en el proyecto
+                final.
             </p>
         </article>
         <article>
             <h3>TAG</h3>
             <p>
-                Son apuntadores estaticos que se utilizan principalmente para el versionado del proyecto, ya que hacen referencia al commit donde se generaron. Facilita la navegacion dentro del historial ya que funcionan como puntos de control nombrados, Generalmente se identifican de la siguiente manera <em>v0.0.0</em> donde el primer numero indica la version principal, el segundo la compilacion o caracteristica agregada y el ultimo alguna correccion o revision del codigo.
+                Son apuntadores estaticos que se utilizan principalmente para el versionado del proyecto, ya que hacen
+                referencia al commit donde se generaron. Facilita la navegacion dentro del historial ya que funcionan
+                como puntos de control nombrados, Generalmente se identifican de la siguiente manera <em>v0.0.0</em>
+                donde el primer numero indica la version principal, el segundo la compilacion o caracteristica agregada
+                y el ultimo alguna correccion o revision del codigo.
             </p>
         </article>
         <article>
             <h3>STASH</h3>
             <p>
-                Apuntador de la zona temporal de cambios, se utiliza principalmente cuando tenemos cambios pendientes que no ameritan la realizacion de un commit y necesitamos cambiar de rama. Genera una referencia al commit actual y el INDEX del mismo; de esta manera cuando se reaplican los cambios almacenados, se realiza una operacion <strong>merge a la inversa.</strong> En caso de trabajar con archivos que a los que no estemos haciendole seguimiento es necesario realizar el <em>git add</em>.
+                Apuntador de la zona temporal de cambios, se utiliza principalmente cuando tenemos cambios pendientes
+                que no ameritan la realizacion de un commit y necesitamos cambiar de rama. Genera una referencia al
+                commit actual y el INDEX del mismo; de esta manera cuando se reaplican los cambios almacenados, se
+                realiza una operacion <strong>merge a la inversa.</strong> En caso de trabajar con archivos que a los
+                que no estemos haciendole seguimiento es necesario realizar el <em>git add</em>.
             </p>
         </article>
     </section>
     <!-- Footer -->
     <footer id="footer">
         <!-- Mapa de contacto -->
-        <iframe class="mapaContacto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52422.61957059963!2d-58.30566590455303!3d-34.79553179983567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a329628f552cad%3A0x813d55ba09834999!2sFlorencio%20Varela%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1650889517929!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="mapaContacto"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52422.61957059963!2d-58.30566590455303!3d-34.79553179983567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a329628f552cad%3A0x813d55ba09834999!2sFlorencio%20Varela%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1650889517929!5m2!1ses-419!2sar"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <button class="mapButton icon-max"></button>
         <!-- Repositorios -->
         <div class="repositories">
@@ -144,7 +167,13 @@
             </tbody>
         </table>
         <!-- Formulario -->
-
+        <!--Redes-->
+        <div class="social">
+            <a class="facebook" href="https://facebook.com" target="_blank"></a>
+            <a class="instagram" href="https://instagram.com" target="_blank"></a>
+            <a class="linkedin" href="https://linkedin.com" target="_blank"></a>
+            <a class="github" href="https://github.com/C215714N/git-lx09" target="_blank"></a>
+        </div>
         <!-- Derechos de autor -->
         <p class="copy">
             &copy; Todos los derechos reservados 2022
