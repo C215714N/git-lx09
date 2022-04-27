@@ -6,17 +6,10 @@
     const mapBtn = d.querySelector('#footer .mapButton')
 
 // Navegacion
-    menuBtn.onclick = toggleClass(
-        [menuBtn, menuLst],
-        ['active', 'icon-close', 'icon-open']
-    )
+    menuBtn.onclick = () => menuLst.classList.toggle('active') ? menuBtn.innerHTML = "&times;" : menuBtn.innerHTML = "&equiv;"
 
 // Mapa de Contacto
-    mapBtn.addEventListener('click', () => 
-        toggleClass(
-            [mapBtn, mapFrm], // elementos (modificador / modificado )
-            ['active', 'icon-min', 'icon-max'] // (toggle , replace a b)
-    )   )
+    mapBtn.addEventListener('click', () => toggleClass([mapBtn, mapFrm], ['active', 'icon-min', 'icon-max'] ) )
 
     function toggleClass(el = [], cn = {a,b,c} ){
         if(el[1].classList.toggle(cn[0])){
