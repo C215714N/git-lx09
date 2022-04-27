@@ -53,6 +53,12 @@
         padding: .25rem;
         color: #ccc;
     }
+    .icon-open::before{
+        content: '≡'
+    }
+    .icon-close::before{
+        content: '×'
+    }
     .menu{
         width: 100%;
         max-height: 0;
