@@ -62,6 +62,14 @@ nav a {
     color: #ccc;
 }
 
+.icon-open::before {
+    content: '≡'
+}
+
+.icon-close::before {
+    content: '×'
+}
+
 .menu {
     width: 100%;
     max-height: 0;
@@ -93,11 +101,33 @@ nav a {
 }
 
 /* Contenido */
+section {
+    margin: auto;
+    padding: 1rem;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+section h2 {
+    width: 100%;
+}
+
+article {
+    flex: 1 0 min(100%, 240px);
+}
 
 /* Pie de pagina */
 #footer {
     position: relative;
     padding: .5rem 0;
+}
+
+.copy {
+    text-align: center;
 }
 
 /* Mapa de contacto */
@@ -254,11 +284,33 @@ nav a {
         width: auto;
         max-height: 640px;
     }
+
+    section {
+        max-width: 720px;
+    }
 }
 
 /* Large Devices - Desktop */
 @media screen and (min-width: 992px) {
     nav {
         justify-content: space-around;
+    }
+
+    section {
+        max-width: 960px;
+    }
+}
+
+/* XL Devices - Desktop */
+@media screen and (min-width: 1200px) {
+    section {
+        max-width: 1140px;
+    }
+}
+
+/* XXL Devices - HD Desktop */
+@media screen and (min-width: 1400px) {
+    section {
+        max-width: 1320px;
     }
 }
