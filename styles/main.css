@@ -110,10 +110,15 @@ section {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    overflow: hidden;
 }
 
 section h2 {
-    width: 100%;
+    width: calc(100% + 2rem);
+    margin: -1rem -1rem .5rem;
+    padding: 1rem;
+    color: #eee;
+    background: linear-gradient(to right, #448e, #c36e);
 }
 
 article {
@@ -286,7 +291,10 @@ article {
     }
 
     section {
+        margin: 1rem auto;
         max-width: 720px;
+        border-radius: .25rem;
+        box-shadow: 0 0 .5rem #999;
     }
 }
 
